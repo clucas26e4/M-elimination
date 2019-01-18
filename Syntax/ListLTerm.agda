@@ -18,6 +18,7 @@ module Syntax.ListLTerm where
   open import Syntax.Term
   
   {- Semantic -}
+  open import Semantic.SemEquality
   
   {- Definition of a list of forumla (Γ or Δ) -}
   data ListLTerm : Set where
@@ -165,4 +166,3 @@ module Syntax.ListLTerm where
     []UL
   remove◆KeepUnfolded (∷UL uT .(◆ A)) (◆∷ Γ A .1 ◆T) =
     ∷UL (remove◆KeepUnfolded uT ◆T) A
-  

@@ -124,10 +124,10 @@ module Semantic.SemEquality where
       (A=B : A ≡ₛ B) ->
       (Ctxt #[ A ]#) ≡ₛ (Ctxt #[ B ]#)
     substₛ :
-      {A B C : Term} ->
+      {A B B' : Term} ->
       {k : ℕ} ->
-      (B=C : B ≡ₛ C) ->
-      (A s[ B / k ]) ≡ₛ (A s[ C / k ])
+      (B=C : B ≡ₛ B') ->
+      (B s[ A / k ]) ≡ₛ (B' s[ A / k ])
     -- Axioms
     -- group axioms
     asso-+S :

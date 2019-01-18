@@ -17,6 +17,7 @@ module Syntax.LHSeqList where
   open import Syntax.ListLTerm
   open import Syntax.LSeq
   open import Syntax.LHSeq
+  open import Syntax.MGA-SR-Can
   open import Syntax.MGA-SR
 
   {- Semantic -}
